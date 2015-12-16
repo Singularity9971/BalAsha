@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="thuglife.balasha.Fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/bal_asha_trust"
+                android:scaleType="centerCrop" />
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home"
+                android:text="@string/home_text"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/list_item_title"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="110dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_layout"
+                android:layout_below="@+id/home"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/facebook_image"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_facebook_logo_png_transparent_background_i2_300x200"
+                    android:onClick="onClick" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/twitter_image"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_twitter_logo_blue"
+                    android:onClick="onClick" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/instagram_image"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_instagram_logo__transparent_background__by_instahack_d8e94oc"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_text_footer"
+                android:layout_below="@+id/icon_layout"
+                android:id="@+id/textView"
+                android:textSize="12sp"
+                android:textColor="@color/list_item_title"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:longClickable="false" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

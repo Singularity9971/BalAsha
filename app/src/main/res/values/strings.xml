@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Bal Asha</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Children Home</item>
+        <item>Adoption</item>
+        <item>Bal Asha Child Development Centre</item>
+        <item>Bal Asha Education Sponsorship</item>
+        <item>Bal Asha Awareness and Training</item>
+        <item>Donate</item>
+        <item>Testimonials</item>
+        <item>About Us</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu Icons -->
+
+    <array name="nav_drawer_icons">
+        <item>0</item>
+        <item>@drawable/children_home</item>
+        <item>@drawable/adoption_centre</item>
+        <item>0</item>
+        <item>@drawable/education_sponsorship</item>
+        <item>@drawable/awareness_training</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+
+    </array>
+
+
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_text"> Bal Asha Trust works for children in need of care and protection.  Children who are found abandoned at various public places around Mumbai, India every year.\n\n
+These children are in dangerous situations as they are left to the mercy of stray animals, insects and wherever anti-social elements and unhygienic condition exist. There are also children who are surrendered by their birth parents as they are unable to take care of them mainly due to social and medical reasons.\n\n
+Bal Asha Trust’s unique, leading and professionally managed NGO was <b>awarded with Ahilyabai Holkar Award by the Government of Maharashtra.</b>\n\n
+We are giving quality child care, love, rehabilitation and future to abandoned and destitute children in our children’s home.   We also place children in loving and caring Adoptive families through Indian courts.\n\n
+Our charity also provides vulnerable children within our communities various supports through our programs such as Child Development Centre and Education Sponsorship.  Bal Asha Trust also creates awareness about its work and plight of children through training programs.
+</string>
+
+    <string name="home_text_footer">Bal Asha Trust, Anand Niketan, Dr. E. Moses Road, Mahalaxmi, Mumbai 400011\n\n
+Phone no : 022-24944090 / 24926526 | Email: info@balashatrust.org | www.balashatrust.org</string>
+
+    <string name="about_us_text">Bal Asha Trust is a registered Charity working for the development of children in need of care and protection.   The organization has taken care of more than 1500 children in the past 30 years.\n\n
+<b><center>VISION</center></b>\n\n
+"Bal Asha’s vision is a world where every child has a safe and warm home, loving family, equal rights to food, good health, education, development and a FUTURE."\n\n
+
+<b><center>MISSION</center></b>\n\n
+"Bal Asha Trust believes every vulnerable child has the right to a brighter tomorrow.\n\n
+Our charitable organization advocates for the emotional and physical safety of children uprooted by destitution.\n\n
+We provide children with access to a safe home, nutrition, quality medical care, education, recreation and rehabilitation.\n\n
+Bal Asha also places children in stable family environments by reuniting them with lost relatives or finding loving families through legal adoption.\n\n
+We aim to ensure the development of children through special programs such as education sponsorship and developmental centre for disable children.\n\n
+Additionally, our dedicated team of professionals strives to spread local and global awareness of the many challenges faced by these children and their families.\n\n
+Above all, we believe in empowering children with hope and better future to each child in need of care and protection."\n\n
+</string>
+
+    <string name="children_home_text">
+        Bal Asha Trust runs provides quality care childrens home for abandoned and destitute children upto the age of 12 years.   Around 70 children can be accommodated in the home.\n\n
+The meaning of Bal Asha is Children’s Hope and true to its meaning the home for vulnerable children has received more than 1500 children in the past 30 years.\n\n
+The Home is located at Bal Asha Trust, KGVM, Anand Niketan on Dr. E. Moses Road, Mahalaxmi, Mumbai 400 011.\n\n
+Bal Asha Trust has a spectrum of services for these children as they are in crucial stage of growth and development.  Bal Asha Trust makes solid efforts in giving stimulation, nutrition, medical care, education, warmth, love and emotional security to these children.\n\n
+Bal Asha Trust has a comprehensive health care and developmental intervention for the children living in the home.  We have a well qualified and experienced team of doctors, psychologist, social workers, occupational therapist, speech therapist, nurses and caretakers for their 24 x 7 care.\n\n
+There are few children with special needs like blindness, cerebral palsy and mentally challenged.  They are known as special children.  They receive the required intervention from medical experts.  Bal Asha Trust provides as much care and support to these children who are not Adopted due to their special needs.\n\n
+All major Indian festivals are celebrated and children are taken to various outdoor activities and visits.
+
+    </string>
+
+</resources>
