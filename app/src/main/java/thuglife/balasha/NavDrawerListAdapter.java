@@ -52,6 +52,14 @@ public class NavDrawerListAdapter extends BaseAdapter {
 
         if(navDrawerItems.get(position).getIcon() != 0)
             imgIcon.setImageResource(navDrawerItems.get(position).getIcon());
+
+        String check = navDrawerItems.get(position).getTitle();
+
+        if(check.equals("Bal Asha Child Development Centre") || check.equals("Home")) {
+            if(imgIcon.getScaleType() != ImageView.ScaleType.FIT_CENTER)
+                imgIcon.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        }
+
         txtTitle.setText(navDrawerItems.get(position).getTitle());
 
         return convertView;

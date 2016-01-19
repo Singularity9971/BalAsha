@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="thuglife.balasha.Fragments.InCountryAdoptionFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selection of a child by the prospective adoptive parents"
+        android:padding="5dp"
+        android:textColor="@color/list_item_title"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/selection_child_heading" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selection_child_heading">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selection_child_text"
+                android:textColor="@color/list_item_title"
+                android:text="@string/selection_child_text"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/circa_footer"
+                android:layout_below="@+id/selection_child_text"
+                android:padding="5dp"
+                android:textColor="@color/list_item_title"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/circa_text"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

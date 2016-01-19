@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="thuglife.balasha.Fragments.DomesticAdoptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Procedure for Adoption for Resident Indians"
+        android:padding="5dp"
+        android:textColor="@color/list_item_title"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/domestic_heading" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/domestic_heading"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/domestic_adoption_text"
+            android:textColor="@color/list_item_title"
+            android:padding="5dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/domestic_main"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,13 +1,100 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     tools:context="thuglife.balasha.Fragments.AdoptionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/adoption_layout"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="50dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/u2022_procedure_for_domestic_adoption"
+                android:id="@+id/domestic_adoption"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/link_color"
+                android:fontFamily="sans-serif-medium"
+                android:clickable="true"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/u2022_selection_of_child_in_country_adoption"
+                android:id="@+id/in_country_adoption"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/link_color"
+                android:fontFamily="sans-serif-medium"
+                android:clickable="true"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/u2022_procedure_for_inter_country_adoption"
+                android:id="@+id/inter_country_adoption"
+                android:textSize="15sp"
+                android:textColor="@color/link_color"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:clickable="true"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/baby"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Click on the above links to know more"
+        android:layout_below="@id/adoption_layout"
+        android:id="@+id/adoption_caption"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif" />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/adoption_caption"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adoption_main_text"
+            android:layout_below="@id/adoption_caption"
+            android:id="@+id/adoption_text"
+            android:textColor="@color/list_item_title"
+            android:padding="5dp"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</RelativeLayout>

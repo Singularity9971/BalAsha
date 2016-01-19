@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ActionMenuView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -17,6 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -25,9 +27,12 @@ import thuglife.balasha.Fragments.AdoptionFragment;
 import thuglife.balasha.Fragments.AwarenessTrainingFragment;
 import thuglife.balasha.Fragments.ChildrenHomeFragment;
 import thuglife.balasha.Fragments.DevelopmentCentreFragment;
+import thuglife.balasha.Fragments.DomesticAdoptionFragment;
 import thuglife.balasha.Fragments.Donate;
 import thuglife.balasha.Fragments.EducationSponsorshipFragment;
 import thuglife.balasha.Fragments.HomeFragment;
+import thuglife.balasha.Fragments.InCountryAdoptionFragment;
+import thuglife.balasha.Fragments.InterCountryAdoption;
 import thuglife.balasha.Fragments.TestimonialsFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -35,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
     private Toolbar toolbar;
-
     // nav drawer title
     private CharSequence mDrawerTitle;
 
@@ -45,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // slide menu items
     private String[] navMenuTitles;
     private TypedArray navMenuIcons;
+    private ActionMenuView amvMenu;
+    private TextView actionBarTitle;
+    private boolean firstTime = true;
 
     private ArrayList<NavDrawerItem> navDrawerItems;
     private NavDrawerListAdapter adapter;
@@ -55,7 +62,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        actionBarTitle = (TextView)findViewById(R.id.action_bar_text);
+        amvMenu = (ActionMenuView)findViewById(R.id.amvMenu);
+        amvMenu.setOnMenuItemClickListener(new ActionMenuView.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem menuItem) {
+                return onOptionsItemSelected(menuItem);
+            }
+        });
         setSupportActionBar(toolbar);
+        if(getSupportActionBar()!=null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle(null);
+        }
 
         mDrawerTitle = mTitle = getTitle();
 
@@ -89,13 +108,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 R.string.app_name // nav drawer close - description for accessibility
         ){
             public void onDrawerClosed(View view) {
-                toolbar.setTitle(mTitle);
+                actionBarTitle.setText(mTitle);
                 // calling onPrepareOptionsMenu() to show action bar icons
                 invalidateOptionsMenu();
             }
 
             public void onDrawerOpened(View drawerView) {
-                toolbar.setTitle(mDrawerTitle);
+                actionBarTitle.setText(mDrawerTitle);
                 // calling onPrepareOptionsMenu() to hide action bar icons
                 invalidateOptionsMenu();
             }
@@ -103,21 +122,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
 
-        if(savedInstanceState == null)
+        if(savedInstanceState == null) {
             displayView(0);
+        }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, amvMenu.getMenu());
         return true;
     }
 
     @Override
     public void onBackPressed() {
-        if(getSupportFragmentManager().findFragmentById(R.id.frame_container) instanceof HomeFragment)
+        Fragment f = getSupportFragmentManager().findFragmentById(R.id.frame_container);
+        if(f instanceof HomeFragment)
             super.onBackPressed();
+        else if(f instanceof DomesticAdoptionFragment || f instanceof InCountryAdoptionFragment || f instanceof InterCountryAdoption) {
+            displayView(2);
+            amvMenu.getMenu().getItem(0).setVisible(false);
+        }
         else
             displayView(0);
     }
@@ -130,8 +155,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         // Handle action bar actions click
         switch (item.getItemId()) {
-            case R.id.action_settings:
-                return true;
+            case R.id.back_button:
+                displayView(2);
+                amvMenu.getMenu().getItem(0).setVisible(false);
+                if(getSupportActionBar()!=null)
+                    actionBarTitle.setText("Adoption");
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -143,15 +171,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         // if nav drawer is opened, hide the action items
-        boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
-        menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
         return super.onPrepareOptionsMenu(menu);
     }
 
     @Override
     public void setTitle(CharSequence title) {
         mTitle = title;
-        toolbar.setTitle(mTitle);
+        actionBarTitle.setText(mTitle);
     }
 
     /**
@@ -180,11 +206,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.facebook_image:
                 startBrowser(null);
                 break;
-            case R.id.twitter_image:
-                startBrowser(null);
+            case R.id.youtube_image:
+                startBrowser(Uri.parse("http://youtube.com/balashatrust"));
                 break;
             case R.id.instagram_image:
                 startBrowser(null);
+                break;
+            case R.id.domestic_adoption:
+                displayView(9);
+                break;
+            case R.id.in_country_adoption:
+                displayView(10);
+                break;
+            case R.id.inter_country_adoption:
+                displayView(11);
+                break;
+            case R.id.uk_donor_link:
+                startBrowser(Uri.parse(((TextView)view).getText().toString()));
+                break;
+            case R.id.india_donor_link:
+                startBrowser(Uri.parse(((TextView)view).getText().toString()));
+                break;
+            case R.id.us_donor_link:
+                startBrowser(Uri.parse(((TextView)view).getText().toString()));
                 break;
             default:
                 break;
@@ -198,6 +242,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
+
 
     /**
      * Slide menu item click listener
@@ -243,12 +288,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case 8:
                 fragment = new AboutUsFragment();
                 break;
+            case 9:
+                fragment = new DomesticAdoptionFragment();
+                actionBarTitle.setText("Domestic Adoption");
+                break;
+            case 10:
+                fragment = new InCountryAdoptionFragment();
+                actionBarTitle.setText("Selection of Child");
+                break;
+            case 11:
+                fragment = new InterCountryAdoption();
+                actionBarTitle.setText("Inter Country Adoption");
+                break;
 
             default:
                 break;
         }
 
-        if (fragment != null) {
+        if (fragment != null && position < 9) {
+            if(!firstTime && amvMenu.getMenu().getItem(0).isVisible())
+                amvMenu.getMenu().getItem(0).setVisible(false);
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(R.id.frame_container,fragment).commit();
@@ -258,9 +317,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mDrawerList.setSelection(position);
             setTitle(navMenuTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
-        } else {
-            // error in creating fragment
-            Log.e("MainActivity", "Error in creating fragment");
+            firstTime = false;
+        } else if(fragment != null){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.frame_container,fragment).commit();
+            amvMenu.getMenu().getItem(0).setVisible(true);
+        }
+        else{
+            Log.e("Avi","Error creating fragment");
         }
     }
 }

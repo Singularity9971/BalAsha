@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/list_background_pressed"
     tools:context="thuglife.balasha.Fragments.HomeFragment">
 
     <ScrollView
@@ -49,14 +50,16 @@
                     android:id="@+id/facebook_image"
                     android:layout_weight="1"
                     android:src="@drawable/ic_facebook_logo_png_transparent_background_i2_300x200"
+                    android:scaleType="fitXY"
                     android:onClick="onClick" />
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:id="@+id/twitter_image"
+                    android:id="@+id/youtube_image"
                     android:layout_weight="1"
-                    android:src="@drawable/ic_twitter_logo_blue"
+                    android:src="@drawable/ic_youtube_logo"
+                    android:scaleType="fitXY"
                     android:onClick="onClick" />
 
                 <ImageView
@@ -65,6 +68,7 @@
                     android:id="@+id/instagram_image"
                     android:layout_weight="1"
                     android:src="@drawable/ic_instagram_logo__transparent_background__by_instahack_d8e94oc"
+                    android:scaleType="fitXY"
                     android:onClick="onClick" />
             </LinearLayout>
 

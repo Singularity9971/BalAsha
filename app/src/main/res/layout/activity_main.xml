@@ -20,7 +20,9 @@
             android:id="@+id/linear_layout"
             android:orientation="vertical">
 
-        <include layout="@layout/toolbar"/>
+            <include layout="@layout/toolbar"/>
+            <include layout="@layout/balashalogo"/>
+
         </LinearLayout>
 
         <!-- Framelayout to display Fragments -->

@@ -2,12 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="thuglife.balasha.Fragments.EducationSponsorshipFragment">
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="thuglife.balasha.Fragments.ChildrenHomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/list_item_title"
+            android:fontFamily="sans-serif"
+            android:text="@string/education_sponsorship_text"
+            android:textSize="16sp" />
+
+    </ScrollView>
 
 </FrameLayout>

@@ -20,10 +20,10 @@
     <!-- Nav Drawer Menu Icons -->
 
     <array name="nav_drawer_icons">
-        <item>0</item>
+        <item>@drawable/bal_asha_trust</item>
         <item>@drawable/children_home</item>
         <item>@drawable/adoption_centre</item>
-        <item>0</item>
+        <item>@drawable/child_development_icon</item>
         <item>@drawable/education_sponsorship</item>
         <item>@drawable/awareness_training</item>
         <item>0</item>
@@ -73,5 +73,195 @@ There are few children with special needs like blindness, cerebral palsy and men
 All major Indian festivals are celebrated and children are taken to various outdoor activities and visits.
 
     </string>
+    <string name="u2022_procedure_for_inter_country_adoption">• Procedure for Inter Country Adoption</string>
+    <string name="u2022_selection_of_child_in_country_adoption">• Selection of Child - In Country\n\u0020 Adoption</string>
+    <string name="u2022_procedure_for_domestic_adoption">• Procedure for Domestic Adoption</string>
+    <string name="adoption_main_text">Bal Asha Trust believes that every child’s first right is to grow in his own biological family he/she is born into.  If the child is unable to grow due to reasons beyond control then the child has a right to be placed in a suitable Adoptive family through a legal procedure.\n\n
+Bal Asha Trust fully believes and acts as per the preamble of the Hague Convention which says <b>“Recognizing that the child, for the full and harmonious development of his or her personality should grow up in a family environment, in an atmosphere of happiness, love and understanding.”</b>\n\n
+
+Bal Asha Trust is a licensed Adoption Organization by the Government of Maharashtra to place children in Adoption with domestic families.  Bal Asha Trust is also recognized by Central Adoption Resource Authority, Ministry of Women and Child Development, Government of India to place children who may not find suitable placements in India in Inter Country Adoption.\n\n
+Children which are placed in Adoption are declared  “Free for Adoption” by Child Welfare Committees after stringently following procedures under the Juvenile Justice Act 2006.  Bal Asha Trust places children in Legal Adoption only through Indian Courts.\n\n
+Bal Asha Trust specializes in Adoption placements of Special Needs and Older Children in Legal Adoptions.\n\n
+Bal Asha Trust social workers are professionally qualified and experienced in Adoption procedures.\n\n
+Bal Asha Trust is meticulous in following all procedures, rules and regulations while placing children in Legal Adoption.  We believe that Adoption process is conducive where there needs to be mutual trust, faith, confidence and respect between all stakeholders.\n\n
+</string>
+
+    <string name="domestic_adoption_text">
+(1) Every resident Indian prospective adoptive parents, who intends to adopt a child, shall register online (www.cara.nic.in) in Child Adoption Resource Information and Guidance System (CARINGS) by filling up the application form and uploading the relevant documents.\n\n
+
+(2) The registration shall be complete and confirmed to the prospective adoptive parents immediately on receipt of the completed application form and required documents on CARINGS.\n\n
+
+(3) The prospective adoptive parents shall get their registration number from the acknowledgement slip and use it for viewing the progress of their case.\n\n
+
+(4) The home study report of the prospective adoptive parents shall be prepared by the specialised adoption agency in the State, where prospective adoptive parents are located, through its social worker.\n\n
+
+(5) The home study report shall be completed within one month from the date of submission of requisite documents.\n\n
+
+(6) The home study report will be posted in the CARINGS by the specialised adoption agency as soon as it is complete.\n\n
+
+(7) The prospective adoptive parents shall be declared eligible and suitable by the specialised adoption agency based upon the home study report and supporting documents and in case any prospective adoptive parent is not declared eligible or suitable, the reasons for the same shall be recorded in the CARINGS.\n\n
+
+(8) The prospective adoptive parents can appeal against the decision of rejection to Central Adoption Resource Authority.  This appeal shall be disposed of within fifteen days and the decision of Central Adoption Resource Authority in this regard shall be binding.\n\n
+
+(9) The adoption of a child by the prospective adoptive parents, after completion of their registration and home study report, shall depend upon the availability of a suitable child.\n\n
+</string>
+
+    <string name="selection_child_text">(1) The seniority of the prospective adoptive parents shall be from the date of registration in the CARINGS.\n\n
+
+(2) On the basis of seniority, the prospective adoptive parents shall be given an opportunity to view the photographs, child study report and medical examination report upto six children, in their preference category if any, in one or more specialised adoption agencies through the CARINGS.\n\n
+
+(3) After viewing the photographs, child study report and medical examination report of the child or children, the prospective adoptive parents may reserve one child within a period of forty eight hours for possible adoption and the rest of the children would be released through CARINGS for other prospective adoptive parents in the waiting list.\n\n
+
+(4) The specialised adoption agency will get the details of the prospective adoptive parents referred from the CARINGS and fix appointment with the prospective adoptive parents to assess the suitability of the prospective adoptive parents by an Adoption Committee, consisting of its adoption incharge or social worker, pediatrician or visiting doctor and one official from the District Child Protection Unit.\n\n
+
+(5) The specialised adoption agency shall also organise a meeting of the prospective adoptive parents with the child.\n\n
+
+(6) The entire process of matching shall be completed within a maximum period of fifteen days from the date of reserving the child.\n\n
+(7) While accepting the child, the prospective adoptive parents shall sign the child study report and medical examination report in the presence of the social worker or chief functionary of the specialized adoption agency.\n\n
+
+(8) In case, the prospective adoptive parents are not selected for the child by the specialised adoption agency, the reason for non-selection of the prospective adoptive parents shall be recorded in the CARINGS.\n\n
+
+(9) In case, the prospective adoptive parents do not accept the reserved child or the specialised adoption agency does not find the prospective adoptive parents suitable, then, the prospective adoptive parents will be shifted to the bottom of the seniority list, as on that date, who can avail a fresh chance when the seniority becomes due and the same procedure shall be followed in the subsequent chances.\n\n
+
+(10) The registration of prospective adoptive parents shall be valid for two years.\n\n
+
+(11) The prospective adoptive parents can also get the medical examination report of the child reviewed by a medical practitioner of their choice.\n\n
+
+(12) If the prospective adoptive parents opt for one of the children shown, they shall accept the child by signing the child study report and medical examination report of the child, which may be downloaded from the CARINGS and the specialised adoption agency shall record the acceptance by the prospective adoptive parents in the CARINGS.\n\n
+
+(13) The prospective Adoptive parent can take the child in pre Adoption foster care by within ten days from the date of acceptance, after signing the pre-adoption foster care undertaking.\n\n
+
+(14) The legal process will then be initiated in the respective courts.\n
+</string>
+
+    <string name="circa_footer">(Note for detailed procedure please visit www.cara.nic.in)</string>
+
+    <string name="inter_country_text">Non-resident Indian to be treated at par with resident Indian.Non-resident Indian prospective adoptive parents shall be treated at par with Indians living in India in terms of priority for adoption of Indian orphan, abandoned or surrendered children.\n\n
+(1) Registration and home study report for prospective adoptive parents for inter-country adoption.  Any non-resident Indian, overseas citizen of India and foreign prospective adoptive parents will have to contact Central Authority on Adoption of their country they reside.  If a non resident lives in non-Hague country, he can approach Indian Mission for information. Once their registration and home study is completed their information will be entered in the Child Adoption Resource Information and Guidance System of CARA.\n\n
+ (2) The seniority of the prospective adoptive parents shall be from the date of their registration in the.\n\n
+(3) The home study report and other documents of the prospective adoptive parents referred to in this Chapter shall be scrutinized at Central Adoption Resource Authority in order to determine their eligibility or suitability.\n\n
+(4) Profiles of two children shall be referred to the authorised foreign adoption agency or Central Authority or Government department or Indian diplomatic mission, as the case may be, which may forward such profiles to the prospective adoptive parents concerned as per local rules. In case of a foreigner or overseas citizen of India, such profile of children shall be referred to the prospective adoptive parents.\n\n
+(5) The prospective adoptive parents may reserve one of the referred children within ninety six hours and the profile of the other child shall stand automatically withdrawn.\n\n
+(6) In case the prospective adoptive parents fail to reserve any of the children within ninety six hours, then the profiles of both the children stand automatically withdrawn.\n\n
+(7) As far as possible, preference of the prospective adoptive parents shall be taken into consideration when sending referrals to them.\n\n
+(8) If the prospective adoptive parents opt for one of the children shown, they shall accept the child by signing the child study report and medical examination report of the child within thirty days from the date of referral.\n\n
+(9) The child study report and medical examination report and photograph in original shall be sent by the specialised adoption agency to the concerned authorized foreign adoption agency or Central authority or the Indian diplomatic mission.\n\n
+(10) In case the prospective adoptive parents fail to accept the referred children within thirty days, then, the profile of the child will stand withdrawn to the Child Adoption Resource Information and Guidance System and the seniority of those prospective adoptive parents will shift to the bottom of the list, who shall be given another opportunity to select a child when their turn becomes due. Provided that the registration of such prospective adoptive parents shall continue for two years from the date of registration.\n\n
+(11) If the prospective adoptive parents desire to visit the specialised adoption agency to see the child in person, before accepting him for adoption, such visit may be made after their adoption application is approved by Central Adoption Resource Authority, and the prospective adoptive parents can also get the medical examination report of the child reviewed by a medical practitioner of their choice.\n\n
+(12) The authorised foreign adoption agency shall forward the original documents of the prospective adoptive parents, as specified in Schedule-8, to the concerned specialised adoption agency.\n\n
+(13) CARA will then issue a  NOC for the case and court procedure will begin.\n\n
+</string>
+
+    <string name="bal_asha_child_dev_text">Bal Asha Trust has successfully rehabilitated many special needs children.\n\n
+<b>It has found that many children are diagnosed late in life for their developmental problems due to these corrective majors are unsuccessful. We have realised that early intervention in these children’s life can make a major difference.</b>\n\n  
+
+To support such children and families at an early stage Bal Asha Trust has revamped its clinic and dispensary to “Bal Asha Child Development Centre”.  The centre has a team of trained professionals for the assessments and therapies for children with developmental delays.\n
+</string>
+
+    <string name="key_services"><b>Key Services</b>\n\n
+        Developmental Paediatric
+Assessments High Risk New Born /
+Follow up Neuron Development Therapy (PT)\n\n
+Early Intervention Centre IQ Tests and Assessments\n\n
+Autism Intervention Services\n\n
+Remedial Education Adolescence\n\n
+Guidance and Counselling\n</string>
+
+    <string name="team_text"><b>The Team</b>\n\nDevelopmental Pediatrician Neuro-developmental Therapist\n\n
+ Occupational Therapist\n\n
+
+Speech Therapist\n\n
+
+Counseling  Psychologist\n\n
+
+Clinical Psychologist\n\n
+
+Remedial Educator\n\n
+
+Social Worker\n</string>
+
+    <string name="child_dev_centre_contact"> Please contact:-\n\n
+
+<b>Bal Asha Child Development Centre\n\n
+
+B2, ground floor, Saifee park, Opp. Isabel School, Dr. Mascarnes Road, Mazgaon,
+
+Mumbai- 400010.\n\n
+
+Timing: 10am – 6 pm (Monday – Saturday)\n\n
+
+Phone:  022-23702444 | Email: <font color = "green">balashatrust.cdc@gmail.com</font></b></string>
+
+    <string name="donate_text">
+        Bal Asha Trust has been involved in making positive changes in individual lives as well as the community.  The projects we implement need support from large-hearted donars like YOU!\n\n
+You can help us in bringing smiles on the people who need care and protection.\n\n
+<font color = "blue">How you can make a difference:</font>\n\n
+
+<b>Sponsor a meal for all the children at Bal Asha Trust.</b>\n\n
+
+You can dedicate the sponsored meal in honour of a family member on special occasions. The  name of the person in whose honour the meal is sponsored will be displayed in our office area.\n\n
+<b>Sponsor Special Veg Lunch:    Rs. 3000/- ($50)\n
+Veg. Lunch: Rs. 2000/- ($35)\n
+Sponsor Evening Snacks: Rs. 1,000/- ($15)\n
+Milk / Infant food for the day: Rs. 1,500/- ($25)\n
+Full day meal and Infant food : Rs. 7500/- ($125)</b>\n\n
+
+<b>Donations in Kind:</b>  You can also donate in kind, to know our current requirements please call us on 022-24944090 / 24926526\n\n
+
+<b>Donations by Cheque:</b> Indian and Foreign donars can write a crossed cheque in favour of “Bal Asha Trust” and send it to Bal Asha Trust, Anand Niketan, Dr. E. Moses Road, Mahalaxmi, Mumbai.\n\n<font color = "blue">Note:
+ 
+</font><b><i> Bal Asha Trust is registered NGO and any donation you make is exempted from Tax as under section 80 G of the Income Tax Act.  We are also registered to receive foreign contributions as under FCRA.</i></b>\n\n
+
+<i>We request you to please send a small note with the cheque mention your name, address and purpose of the donation.  Receipt will be issued to all donors.  You can email us at <font color = "blue">info@balashatrust.org</font></i>\n
+
+    </string>
+
+    <string name="testimonials_text"><i>I am so truly touched and moved by all the noble work that you and your entire team is doing here at Bal Asha Trust.  It has been such a beautiful experience to see the sweet smiles and loving care that all y our caretakers take towards all these amazing children.  We will come back and be more a part of this Trust.  Keep up all the amazing love your team has !! With all my love and affection.\n\n
+It was a wonderful experience to be with the very devoted and enthusiastic Bal Asha Trust volunteers…. the work done by Bal Asha Trust is really great and has touched my heart.\n\n
+I will cherish my visit to this place.  It was really an eye-opener.\n\n</i>
+<b><font color = "grey">Mr. D. Shivanandhan, IPS - Director General of Police, Maharashtra and Commissioner, Mumbai Police</font></b>\n\n
+
+<i>We are very much impressed by the work Bal Asha Trust has been doing. We would like to thank you for your precious work for the future. We wish you all the best and highly appreciate your work for the children.</i>\n\n
+<b><font color = "grey">Delegation from Govt of Nepal to learn about Quality Child Care and Adoption</font></b>\n\n
+<i>Got an opportunity to visit again the institution. Impressed by dedication and commitment of all the staff involved in such a noble cause for little children. Touched by the sense of of service to children and to the God.</i>\n\n
+<b><font color = "grey">Mr. Shirkant Desphande and Mr. Vikas Chandra Rastogi - Secretary (Finance) and Secretary to the Governor of Maharashtra</font></b>\n\n
+<i>I am full of admiration for the wonderful work for you are doing and very proud of Barclays support that their young team is giving.\n
+Thank you for the warm welcome and long may Bal Asha Trust continue.</i>\n\n
+<b><font color = "grey">Kate Ajius - Spouse of Chairman, Barclays Bank, UK</font></b>\n\n
+
+<i>…we also witnessed the unrivalled commitment and dedication of the employees in making adoption happen, never giving up despite the hurdles and ensuring thoroughness in their work with the safety and best interests of the children always of central and paramount importance.</i>\n\n
+<b><font color = "grey">Nicola Rudkin - Sister in Intensive Care; London, UK</font></b>\n
+</string>
+
+    <string name="education_sponsorship_text">Bal Asha Trust implements Education Sponsorship Project for children who live within their families.  This is in line with our mission of Strengthening Families.\n\n
+The families who are identified to receive Sponsorship under the project are mainly run by single women. These women are the sole bread earners in the family.  They work as domestic help, supply tiffins. have small paying jobs and some of them are commercially sexually exploited women.\n\n
+There are also joint families where the income is low.\n\n
+The school or college going children in these families have high incidence of dropouts due to economic reasons. They are also low on self esteem and believe that future does not have much in store for them.  As they may not study above basic level of schooling and will only get general jobs, if is a girl child, marriage is the only future considered.\n\n
+An individual sponsors education of a child living with his family. This sponsorship supplements their education which may have been discontinued due to lack of funds.\n\n
+The donor receives an information sheet with the name, age, address, photograph and a write up on the child.\n\n
+The Trust monitors the programme. The sponsorship covers fees, text books, note books, stationary, uniforms, bags, shoes and other educational related expenses.\n\n
+Performance and progress reports are provided once a year to the sponsor.\n\n
+Bal Asha Trust also organizes annual get-togethers for donors and sponsored children.\n\n
+Bal Asha Trust through its Educational Programme makes positive intervention in these families. This will enhance chances for a secure future.\n\n
+The Trusts also holds regular programs and career counseling sessions for these children.\n\n
+</string>
+
+    <string name="awareness_training_text">
+        Bal Asha Trust organizes and conducts workshops, seminars, conferences on various issues mainly on Adoption, Implementation of Juvenile Justice Act 2006 (Care and Protection), Quality Care in Institutions and Child Sexual Abuse. The programme are designed for different stake holders within our society like Police, Government Officers, Public, NGOs, Adopters and general public.\n\n
+The objective is to disseminate information and knowledge.  The key idea is to provide help to the child in need of care and protection.\n\n
+Bal Asha Trust has organized and conducted 38 such programs for different stakeholders.\n\n
+The most prominent are:-\n\n
+The first National Adoption Workshop 1995 in Mumbai for participants from all over the country.  His Excellency Ex-Governer of Maharashtra Mr. P. C. Alexandra inaugurated the workshop and the valedictory function was presided over by Mr. Manohar Joshi, Ex Chief Minister of Maharashtra.\n\n
+Bal Asha Trust also organized “Adoption Karyashala 2007”.  The workshop was organized in 5 cities namely Kolhapur, Nasik, Mumbai, Nagpur and Aurangabad in 2007.\n\n
+The workshop was for government officers of the women and child development and NGOs running residential homes for orphan, abandoned and destitute children.  Information to participants on various laws under which residential homes need to be registered, quality child care in these homes, Adoption, record keeping and other information to improve the overall working of the residential homes in the state of Maharashtra, where given during the workshop.\n\n
+Public Seminar on Child Adoption was organized on 14th November 2009 at YMCA, Colaba, Mumbai.  The seminar was attended by more than 85 persons from various walks of life although with a common intention to know more about Child Adoption.  The seminar highlighted various aspects of medical, emotional, social preparation which families need to consider while adopting.  The procedures and documentation required in Adoption along with laws were also highlighted in the seminar. An Adoptive couple also shared their positive experience with the group. The seminar was supported by Barclays Bank.\n\n
+ 
+Workshop for Mumbai Police “Implementation of Juvenile Justice Act 2006” held on 27thMarch 2010.  The workshop was inaugurated by Shri. D. Shivanandan, Commissioner, Mumbai Police.  The workshop discussed role of Police under the JJ Act, highlighted smooth process for interventions for children in need of care and protection. The workshop was supported by Barclays Bank.\n\n
+
+The workshop was attended by more than 480 NGOs.  The programme was supported by following NGOs  Kolhapur and Mumbai – Maje Maher, Nagpur – Bal Ashraya, Aurangabad – Sakar, Nasik – Adharashram.\n\n
+
+    </string>
+
+    <string name="degubMode">false</string>
 
 </resources>
